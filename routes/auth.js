@@ -12,7 +12,6 @@ const { SECRET_KEY } = require("../config");
  *
  **/
 router.post("/login", async (req, res, next) => {
-    //console.log("login hit!");
     try {
         const {username, password} = req.body;
         if (!username || !password) {
